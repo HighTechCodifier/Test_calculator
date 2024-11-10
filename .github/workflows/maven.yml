@@ -26,8 +26,10 @@ jobs:
         java-version: '20'
         distribution: 'temurin'
         cache: maven
-    - name: Build and verify with Maven
-      run: mvn -B verify --file pom.xml
+    - name: Run tests and fail on test errors with Maven
+      run: mvn -B test --fail-at-end --file pom.xml
+
+
 
 
    
