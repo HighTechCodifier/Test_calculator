@@ -26,8 +26,8 @@ jobs:
         java-version: '20'
         distribution: 'temurin'
         cache: maven
-    - name: Run tests and enforce failures with Maven
-      run: mvn -B test --fail-at-end -DfailIfNoTests=false --file pom.xml
+    - name: Run tests with Maven and fail on test errors
+      run: mvn clean test --fail-at-end
 
 
 
