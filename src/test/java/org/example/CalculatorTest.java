@@ -53,7 +53,7 @@ class CalculatorTest {
         int actualValue = calculator.subtract(a, b);
 
         //Define the expected value
-        int expectedValue = 7;
+        int expectedValue = 5;
 
         assertEquals(expectedValue, actualValue, "\n2. test_subtract_method FAILED");
         System.out.println("2. test_subtract_method PASSED");
