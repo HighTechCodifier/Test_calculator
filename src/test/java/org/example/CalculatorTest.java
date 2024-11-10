@@ -30,13 +30,18 @@ class CalculatorTest {
         int actualValue = calculator.add(a, b);
 
         //Define the expected value
-        int expectedValue = 11;
+        int expectedValue = 5;
 
         /*Verify that the expected and the actual
         values are equal by an assert-statement:*/
         assertEquals(expectedValue, actualValue, "\n1. test_add_method FAILED");
         System.out.println("1. test_add_method PASSED");
 
+    }
+
+    @Test
+    public void forcedFailure() {
+        fail("This test is supposed to fail to verify GitHub Actions detects failures.");
     }
 
 }
