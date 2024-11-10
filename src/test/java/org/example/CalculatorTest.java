@@ -39,6 +39,27 @@ class CalculatorTest {
 
     }
 
+    // 2.
+    @Test
+    @DisplayName("Verify subtract-method for integers")
+    public void test_subtract_method() {
+
+        //Choose two arbitrary integers:
+        int a = 7;
+        int b = 3;
+
+        /*Define actual value by calling the subtract-method
+        in the calculator-class on this calculator-object: */
+        int actualValue = calculator.subtract(a, b);
+
+        //Define the expected value
+        int expectedValue = 4;
+
+        assertEquals(expectedValue, actualValue, "\n2. test_subtract_method FAILED");
+        System.out.println("2. test_subtract_method PASSED");
+
+    }
+
     /*
     @Test
     public void forcedFailure_2() {
