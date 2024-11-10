@@ -30,7 +30,7 @@ class CalculatorTest {
         int actualValue = calculator.add(a, b);
 
         //Define the expected value
-        int expectedValue = 8;
+        int expectedValue = 10;
 
         /*Verify that the expected and the actual
         values are equal by an assert-statement:*/
