@@ -45,15 +45,15 @@ class CalculatorTest {
     public void test_subtract_method() {
 
         //Choose two arbitrary integers:
-        int a = 7;
-        int b = 3;
+        int a = 9;
+        int b = 2;
 
         /*Define actual value by calling the subtract-method
         in the calculator-class on this calculator-object: */
         int actualValue = calculator.subtract(a, b);
 
         //Define the expected value
-        int expectedValue = 4;
+        int expectedValue = 7;
 
         assertEquals(expectedValue, actualValue, "\n2. test_subtract_method FAILED");
         System.out.println("2. test_subtract_method PASSED");
