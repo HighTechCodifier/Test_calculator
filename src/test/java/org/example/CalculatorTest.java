@@ -40,7 +40,7 @@ class CalculatorTest {
     }
 
     @Test
-    public void forcedFailure_1() {
+    public void forcedFailure_2() {
         fail("This test is supposed to fail to verify GitHub Actions detects failures.");
     }
 
