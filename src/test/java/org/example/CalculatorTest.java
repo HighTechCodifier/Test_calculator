@@ -241,6 +241,30 @@ class CalculatorTest {
 
     }
 
+    // 11.
+    @Test
+    @DisplayName("Verify getCircumference-method for a negative number")
+    public void test_getCircumference_method_forNegativeNumber(){
+
+        //Choose a negative number:
+        int negativeNumber = 3;
+
+        /*Define actual value by calling the getCircumference-method
+        in the calculator-class on this calculator-object: */
+        double actualValue = calculator.getCircumference(negativeNumber);
+
+        //Define the expected value
+        double expectedValue = Double.NaN;
+
+        /*Verify that the expected and the actual
+        values are equal by an assert-statement:*/
+        assertEquals(expectedValue , actualValue,
+                "\n11. test_getCircumference_method_forNegativeNumber FAILED");
+
+        System.out.println("11. test_getCircumference_method_forNegativeNumber PASSED");
+
+    }
+
     /*
     @Test
     public void forcedFailure_2() {
