@@ -157,7 +157,7 @@ class CalculatorTest {
     public void test_squareRootOf_method_forNegativeNumber(){
 
         //Choose a negative number:
-        int negativeNumber = 9;
+        int negativeNumber = -9;
 
         /*Define actual value by calling the squareRootOf-method
         in the calculator-class on this calculator-object: */
