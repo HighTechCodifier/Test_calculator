@@ -224,7 +224,7 @@ class CalculatorTest {
     public void test_getCircumference_method_forPositiveNumber(){
 
         //Choose a positive number:
-        int positiveNumber = -3;
+        int positiveNumber = 3;
 
         /*Define actual value by calling the getCircumference-method
         in the calculator-class on this calculator-object: */
