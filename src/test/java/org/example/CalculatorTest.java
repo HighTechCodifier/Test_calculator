@@ -106,6 +106,29 @@ class CalculatorTest {
 
     }
 
+    // 5.
+    @Test
+    @DisplayName("Verify divide-method for division by 0")
+    public void test_divide_method_forDivisionByZero() {
+
+        //Choose two arbitrary integers:
+        int a = 9;
+        int b = 1;
+
+       /*Define actual value by calling the divide-method
+        in the calculator-class on this calculator-object: */
+        double actualValue = calculator.divide(a, b);
+
+        //Define the expected value:
+        double expectedValue = Double.NaN;
+
+        /*Verify the normal division by asserting whether the
+        expected and the actual values are equal to each other or not:*/
+        assertEquals(expectedValue , actualValue, "\n5. test_divide_method_forDivisionByZero FAILED");
+        System.out.println("5. test_divide_method_forDivisionByZero PASSED");
+
+    }
+
     /*
     @Test
     public void forcedFailure_2() {
