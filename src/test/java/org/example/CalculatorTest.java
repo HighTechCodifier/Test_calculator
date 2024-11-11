@@ -218,6 +218,29 @@ class CalculatorTest {
 
     }
 
+    // 10.
+    @Test
+    @DisplayName("Verify getCircumference-method for a positive number")
+    public void test_getCircumference_method_forPositiveNumber(){
+
+        //Choose a positive number:
+        int positiveNumber = -3;
+
+        /*Define actual value by calling the getCircumference-method
+        in the calculator-class on this calculator-object: */
+        double actualValue = calculator.getCircumference(positiveNumber);
+
+        //Define the expected value
+        double circumference = Math.PI * 2 * positiveNumber;
+        double expectedValue = Math.round(circumference * 100.0) / 100.0;
+
+        /*Verify that the expected and the actual
+        values are equal by an assert-statement:*/
+        assertEquals(expectedValue , actualValue, "\n10. test_getCircumference_method_forPositiveNumber FAILED");
+        System.out.println("10. test_getCircumference_method_forPositiveNumber PASSED");
+
+    }
+
     /*
     @Test
     public void forcedFailure_2() {
