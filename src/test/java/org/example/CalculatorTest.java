@@ -151,6 +151,28 @@ class CalculatorTest {
 
     }
 
+    // 7.
+    @Test
+    @DisplayName("Verify squareRootOf-method for a negative number")
+    public void test_squareRootOf_method_forNegativeNumber(){
+
+        //Choose a negative number:
+        int negativeNumber = 9;
+
+        /*Define actual value by calling the squareRootOf-method
+        in the calculator-class on this calculator-object: */
+        double actualValue = calculator.squareRootOf(negativeNumber);
+
+        //Define the expected value
+        double expectedValue = Double.NaN;
+
+        /*Verify that the expected and the actual
+        values are equal by an assert-statement:*/
+        assertEquals(expectedValue , actualValue, "\n7. test_squareRootOf_method_forNegativeNumber FAILED");
+        System.out.println("7. test_squareRootOf_method_forNegativeNumber PASSED");
+
+    }
+
     /*
     @Test
     public void forcedFailure_2() {
