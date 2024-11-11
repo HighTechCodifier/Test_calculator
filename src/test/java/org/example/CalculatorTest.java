@@ -60,6 +60,29 @@ class CalculatorTest {
 
     }
 
+    // 3.
+    @Test
+    @DisplayName("Verify multiply-method for integers")
+    public void test_multiply_method() {
+
+        //Choose two arbitrary integers:
+        int a = 3;
+        int b = 5;
+
+        /*Define actual value by calling the multiply-method
+        in the calculator-class on this calculator-object: */
+        int actualValue = calculator.multiply(a, b);
+
+        //Define the expected value
+        int expectedValue = 15;
+
+        /*Verify that the expected and the actual
+        values are equal by an assert-statement:*/
+        assertEquals(expectedValue, actualValue, "\n3. test_multiply_method FAILED");
+        System.out.println("3. test_multiply_method PASSED");
+
+    }
+
     /*
     @Test
     public void forcedFailure_2() {
