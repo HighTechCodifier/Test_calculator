@@ -187,7 +187,7 @@ class CalculatorTest {
 
         //Define the expected value
         double area = Math.PI * (positiveNumber * positiveNumber);
-        double expectedValue = Math.round(area * 100.0) / 10.0;
+        double expectedValue = Math.round(area * 100.0) / 100.0;
 
         /*Verify that the expected and the actual
         values are equal by an assert-statement:*/
