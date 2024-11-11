@@ -74,7 +74,7 @@ class CalculatorTest {
         int actualValue = calculator.multiply(a, b);
 
         //Define the expected value
-        int expectedValue = 20;
+        int expectedValue = 15;
 
         /*Verify that the expected and the actual
         values are equal by an assert-statement:*/
