@@ -202,7 +202,7 @@ class CalculatorTest {
     public void test_getArea_method_forNegativeNumber(){
 
         //Choose a negative number:
-        int negativeNumber = 3;
+        int negativeNumber = -3;
 
         /*Define actual value by calling the getAreaOf-method
         in the calculator-class on this calculator-object: */
