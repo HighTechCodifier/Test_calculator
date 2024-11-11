@@ -113,7 +113,7 @@ class CalculatorTest {
 
         //Choose two arbitrary integers:
         int a = 9;
-        int b = 1;
+        int b = 0;
 
        /*Define actual value by calling the divide-method
         in the calculator-class on this calculator-object: */
