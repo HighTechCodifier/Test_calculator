@@ -265,13 +265,16 @@ class CalculatorTest {
 
     }
 
-    /*
+    // 12.
     @Test
-    public void forcedFailure_2() {
-        fail("This test is supposed to fail to verify GitHub Actions detects failures.");
+    @DisplayName("Verify whether an object of the class is created or not")
+    public void test_IfClassObjectIsNullOrNot () {
+
+        /* Verify whether the class-object is null or not when the program runs: */
+        assertNotNull(calculator, "\n12. test_IfClassObjectIsNullOrNot FAILED");
+
+        System.out.println("12. test_IfClassObjectIsNullOrNot PASSED");
+
     }
-    */
-
-
 }
 
