@@ -173,6 +173,29 @@ class CalculatorTest {
 
     }
 
+    // 8.
+    @Test
+    @DisplayName("Verify getArea-method for a positive number")
+    public void test_getArea_method_forPositiveNumber(){
+
+        //Choose a positive number:
+        int positiveNumber = 3;
+
+        /*Define actual value by calling the getArea-method
+        in the calculator-class on this calculator-object: */
+        double actualValue = calculator.getArea(positiveNumber);
+
+        //Define the expected value
+        double area = Math.PI * (positiveNumber * positiveNumber);
+        double expectedValue = Math.round(area * 100.0) / 10.0;
+
+        /*Verify that the expected and the actual
+        values are equal by an assert-statement:*/
+        assertEquals(expectedValue , actualValue, "\n8. test_getArea_method_forPositiveNumber FAILED");
+        System.out.println("8. test_getArea_method_forPositiveNumber PASSED");
+
+    }
+
     /*
     @Test
     public void forcedFailure_2() {
