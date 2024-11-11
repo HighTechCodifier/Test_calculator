@@ -97,7 +97,7 @@ class CalculatorTest {
         double actualValue = calculator.divide(a, b);
 
         //Define the expected value
-        double expectedValue = (double) 9 / (double) 3;
+        double expectedValue = (double) 9 / (double) 2;
 
         /*Verify the normal division by asserting whether the
         expected and the actual values are equal to each other or not:*/
