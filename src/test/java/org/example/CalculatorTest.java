@@ -83,6 +83,29 @@ class CalculatorTest {
 
     }
 
+    // 4.
+    @Test
+    @DisplayName("Verify divide-method between integers")
+    public void test_divide_method_betweenIntegers() {
+
+        //Choose two arbitrary integers:
+        int a = 9;
+        int b = 2;
+
+        /*Define actual value by calling the divide-method
+        in the calculator-class on this calculator-object: */
+        double actualValue = calculator.divide(a, b);
+
+        //Define the expected value
+        double expectedValue = (double) 9 / (double) 3;
+
+        /*Verify the normal division by asserting whether the
+        expected and the actual values are equal to each other or not:*/
+        assertEquals(expectedValue , actualValue, "\n4. test_divide_method_betweenIntegers FAILED");
+        System.out.println("4. test_divide_method_betweenIntegers PASSED");
+
+    }
+
     /*
     @Test
     public void forcedFailure_2() {
