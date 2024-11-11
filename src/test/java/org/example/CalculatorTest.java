@@ -196,6 +196,28 @@ class CalculatorTest {
 
     }
 
+    // 9.
+    @Test
+    @DisplayName("Verify getAreaOf-method for a negative number")
+    public void test_getArea_method_forNegativeNumber(){
+
+        //Choose a negative number:
+        int negativeNumber = 3;
+
+        /*Define actual value by calling the getAreaOf-method
+        in the calculator-class on this calculator-object: */
+        double actualValue = calculator.getArea(negativeNumber);
+
+        //Define the expected value
+        double expectedValue = Double.NaN;
+
+        /*Verify that the expected and the actual
+        values are equal by an assert-statement:*/
+        assertEquals(expectedValue , actualValue, "\n9. test_getArea_method_forNegativeNumber FAILED");
+        System.out.println("9. test_getArea_method_forNegativeNumber PASSED");
+
+    }
+
     /*
     @Test
     public void forcedFailure_2() {
