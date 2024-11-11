@@ -129,6 +129,28 @@ class CalculatorTest {
 
     }
 
+    // 6.
+    @Test
+    @DisplayName("Verify squareRootOf-method for a positive number")
+    public void test_squareRootOf_method_forPositiveNumber(){
+
+        //Choose a positive number:
+        int positiveNumber = 9;
+
+        /*Define actual value by calling the squareRootOf-method
+        in the calculator-class on this calculator-object: */
+        double actualValue = calculator.squareRootOf(positiveNumber);
+
+        //Define the expected value
+        double expectedValue = 4;
+
+        /*Verify that the expected and the actual
+        values are equal by an assert-statement:*/
+        assertEquals(expectedValue , actualValue, "\n6. test_squareRootOf_method_forPositiveNumber FAILED");
+        System.out.println("6. test_squareRootOf_method_forPositiveNumber PASSED");
+
+    }
+
     /*
     @Test
     public void forcedFailure_2() {
