@@ -142,7 +142,7 @@ class CalculatorTest {
         double actualValue = calculator.squareRootOf(positiveNumber);
 
         //Define the expected value
-        double expectedValue = 4;
+        double expectedValue = 3;
 
         /*Verify that the expected and the actual
         values are equal by an assert-statement:*/
